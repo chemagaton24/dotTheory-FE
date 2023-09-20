@@ -1,0 +1,447 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: rgb(68, 47, 58);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+header {
+  position: absolute;
+  right: 38px;
+  top: 36px;
+  z-index: 1;
+}
+
+.main-nav-block ul {
+  display: flex;
+  column-gap: 38px;
+  list-style: none;
+}
+.main-nav-block a {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: rgb(68, 47, 58);
+  text-decoration: none;
+  transition: color 0.3s linear 0s;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+
+.main-nav-block a:hover {
+  border-bottom: 2px solid;
+}
+
+.hero-section-block {
+  position: relative;
+  height: 785px;
+}
+.hero-section-block .cover {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.hero-section-block .content-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.hero-section-block .content-bg svg {
+  width: 100%;
+  height: 100%;
+}
+.hero-section-block .content-wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 551px;
+  height: 785px;
+}
+.hero-section-block .content {
+  position: absolute;
+  left: 87px;
+  top: 200px;
+}
+.hero-section-block .heading {
+  line-height: 110%;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 500;
+}
+.hero-section-block .description {
+  font-size: 30px;
+  max-width: 425px;
+  margin-block: 12px 40px;
+}
+
+.shine-premium-block {
+  display: flex;
+  justify-content: center;
+  column-gap: 40px;
+  padding-block: 50px;
+}
+.shine-premium-block .col-1 {
+  max-width: 440px;
+}
+.shine-premium-block .col-2 {
+  max-width: 322px;
+}
+.shine-premium-block .sub-heading {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 110%;
+  margin-block: 16px 8px;
+}
+.shine-premium-block .heading {
+  font-style: normal;
+  font-size: 26px;
+  line-height: 120%;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  margin-block: 8px 20px;
+}
+.shine-premium-block .list {
+  list-style: none;
+  max-width: 320px;
+}
+.shine-premium-block .list > li {
+  background-repeat: no-repeat;
+  background-size: 64px auto;
+  background-position: left top 15px;
+  padding-top: 15px;
+  padding-left: 80px;
+  margin-bottom: 24px;
+}
+.shine-premium-block .list > li.meditation {
+  background-image: url("../images/wellness-journey-list/meditation.png");
+}
+.shine-premium-block .list > li.courses {
+  background-image: url("../images/wellness-journey-list/courses.png");
+}
+.shine-premium-block .list > li.support {
+  background-image: url("../images/wellness-journey-list/support.png");
+}
+.shine-premium-block .list > li.community {
+  background-image: url("../images/wellness-journey-list/community.png");
+}
+.shine-premium-block .list > li h4 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 110%;
+  margin-block: 0 8px;
+}
+.shine-premium-block .list > li p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgb(119, 119, 119);
+  margin-block: 0px;
+}
+.shine-premium-block video {
+  max-width: 100%;
+}
+
+.meditation-playlist {
+  background-image: url("../images/library-section-blob.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 30%;
+  background-color: rgb(52, 115, 113);
+  min-height: 740px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 10px;
+}
+.meditation-playlist .section-heading {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  font-size: 38px;
+  max-width: 696px;
+  text-align: center;
+}
+.meditation-playlist .track-list-wrap {
+  width: 100%;
+  overflow: auto;
+}
+.meditation-playlist .track-list-wrap::-webkit-scrollbar {
+  display: none;
+}
+.meditation-playlist .track-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  column-gap: 20px;
+}
+.meditation-playlist .card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  width: 354px;
+  height: 317px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.meditation-playlist .card .img-wrap {
+  position: relative;
+  margin-bottom: 20px;
+}
+.meditation-playlist .card .img-wrap .controls {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.meditation-playlist .card .img-wrap .controls .active {
+  display: none;
+}
+.meditation-playlist .card:hover .img-wrap .controls .inactive {
+  display: none;
+}
+.meditation-playlist .card:hover .img-wrap .controls .active {
+  display: inline-block;
+}
+.meditation-playlist .card .artist {
+  font-size: 14px;
+  color: rgb(119, 119, 119);
+  font-weight: 500;
+  line-height: 130%;
+  margin-bottom: 15px;
+}
+.meditation-playlist .card .title {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgb(25, 25, 25);
+  line-height: 130%;
+}
+
+.therapist-block {
+  background-color: rgb(248, 238, 216);
+  padding-bottom: 115px;
+}
+.therapist-block .therapists-list-wrap {
+  position: relative;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 60px 24px 20px;
+  max-width: 952px;
+  margin: -70px auto 0;
+  border-radius: 32px;
+  text-align: center;
+}
+.therapist-block .therapists-list-wrap h2 {
+  font-size: 28px;
+  line-height: 120%;
+  max-width: 550px;
+  margin: 0 auto 60px;
+  font-weight: 500;
+}
+.therapist-block .therapists-list-wrap .card-list-wrap {
+  display: inline-block;
+  text-align: center;
+}
+.therapist-block .therapists-list-wrap .card-list {
+  list-style: none;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 35px;
+}
+.therapist-block .therapists-list-wrap .card-list > li {
+  width: 260px;
+  max-width: 33.33%;
+}
+.therapist-block .therapists-list-wrap .card {
+  padding-bottom: 16px;
+}
+.therapist-block .therapists-list-wrap .card img {
+  margin-bottom: 18px;
+  max-width: 180px;
+}
+.therapist-block .therapists-list-wrap .card .name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 2px;
+}
+.therapist-block .therapists-list-wrap .card .position {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+}
+
+.reviews-block {
+  background-color: rgb(77, 144, 143);
+  padding: 60px 0px;
+  color: rgb(255, 255, 255);
+  background-image: url("../images/social-proof-section-blob.svg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 20%;
+}
+.reviews-block .inner {
+  margin: 0 auto;
+  max-width: 700px;
+}
+.reviews-block .review-stars-wrap {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.reviews-block .review-content {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 40px;
+}
+.reviews-block .quote-icon {
+  width: 60px;
+  max-width: 60px;
+}
+.reviews-block h2 {
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 120%;
+  text-align: center;
+  max-width: 660px;
+  letter-spacing: 0.38px;
+  margin: 0 auto;
+}
+.reviews-block p {
+  font-size: 18px;
+  text-align: justify;
+  line-height: 160%;
+  margin: 0px;
+  padding: 0 40px 40px;
+}
+
+.learn-about-us-block {
+  background-color: rgb(248, 238, 216);
+  background-image: url("../images/shine-founders-background-blob.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center bottom;
+  padding: 50px;
+  text-align: center;
+}
+.learn-about-us-block h2 {
+  max-width: 495px;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 130%;
+  margin: 0 auto 36px;
+}
+.learn-about-us-block p {
+  font-size: 24px;
+  max-width: 700px;
+  margin: 0 auto 24px;
+}
+.learn-about-us-block .cta-wrap {
+  margin-bottom: 30px;
+}
+.learn-about-us-block .cta-wrap button {
+  display: inline-flex;
+  width: 198px;
+  height: 50px;
+  background: rgb(247, 202, 93);
+  border-radius: 47px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  align-items: center;
+  justify-content: center;
+  color: rgb(68, 47, 58);
+  transition: background 0.5s ease 0s;
+  border: 0;
+}
+.learn-about-us-block .naomi-and-marah-pic-wrap img {
+  max-width: 600px;
+}
+
+footer {
+  padding: 40px 80px 0;
+}
+footer h3 {
+  margin: 0 0 24px;
+}
+footer nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer nav ul li {
+  margin-bottom: 12px;
+}
+footer nav a {
+  color: rgb(119, 119, 119);
+  text-decoration: none;
+  line-height: 150%;
+  font-size: 15px;
+}
+footer .row-1 {
+  display: flex;
+  padding-bottom: 40px;
+}
+footer .row-1 > .col {
+  flex-grow: 0.5;
+}
+footer .sitemap {
+  display: flex;
+  margin-bottom: 40px;
+}
+footer .sitemap > .col {
+  flex-grow: 0.2;
+}
+footer .app-download > ul {
+  display: flex;
+  column-gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer .app-download img {
+  max-width: 182px;
+}
+footer .social-media-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  column-gap: 32px;
+}
+footer .copyright {
+  padding: 40px 0;
+  color: rgb(119, 119, 119);
+  line-height: 150%;
+  font-size: 15px;
+  border-top: 1px solid rgb(242, 237, 240);
+}
