@@ -13,8 +13,12 @@ header .logo {
 }
 .hero-section-block {
   background-color: rgb(98, 69, 84);
-  padding: 50px 50px 0;
+  padding: 32px 32px 0;
   color: #fff;
+
+  @media only screen and (min-width: 768px) {
+    padding: 50px 50px 0;
+  }
 }
 .hero-section-block .inner {
   max-width: 1100px;
@@ -22,11 +26,23 @@ header .logo {
 }
 .hero-section-block .row {
   display: flex;
-  align-items: flex-start;
-  column-gap: 50px;
+  align-items: center;
+  gap: 32px 50px;
+  flex-direction: column;
+
+  @media only screen and (min-width: 1024px) {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+}
+.hero-section-block .row .col-1 {
+  flex: 1 1 0%;
+}
+.hero-section-block .row .col-2 {
+  flex: 2 1 0%;
 }
 .hero-section-block .friends-mental-benefits-img {
-  width: 350px;
+  width: 100%;
   max-width: 350px;
   border-radius: 30px;
 }
@@ -77,11 +93,16 @@ header .logo {
   display: flex;
   flex-flow: wrap;
   justify-content: center;
+  flex-direction: column;
   gap: 4%;
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
   list-style: none;
+
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 .podcast-speakers-block .podcast-speaker-list li {
   flex-basis: 46%;
@@ -103,6 +124,7 @@ header .logo {
 }
 .podcast-speaker-card .speaker-image {
   max-width: 375px;
+  width: 100%;
   border-radius: 30px;
   margin-bottom: 20px;
 }
@@ -159,11 +181,17 @@ header .logo {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  flex-direction: column;
   gap: 50px;
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
+
+  @media only screen and (min-width: 768px) {
+    align-items: flex-start;
+    flex-direction: row;
+  }
 }
 .the-daily-shine-block .col-1 {
   flex: 1 1 0%;
