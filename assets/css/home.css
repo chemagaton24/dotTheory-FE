@@ -281,14 +281,17 @@ header {
 }
 .therapist-block .therapists-list-wrap .card-list {
   list-style: none;
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 1fr;
   row-gap: 35px;
+
+  @media only screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 .therapist-block .therapists-list-wrap .card-list > li {
-  width: 260px;
+  max-width: 260px;
+  width: 100%;
 }
 .therapist-block .therapists-list-wrap .card {
   padding-bottom: 16px;

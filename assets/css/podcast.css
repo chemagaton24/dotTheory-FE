@@ -90,23 +90,21 @@ header .logo {
   color: #fff;
 }
 .podcast-speakers-block .podcast-speaker-list {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: center;
-  flex-direction: column;
-  gap: 4%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
   list-style: none;
 
   @media only screen and (min-width: 768px) {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 .podcast-speakers-block .podcast-speaker-list li {
   flex-basis: 46%;
-  margin-bottom: 50px;
 }
 .podcast-speakers-block .podcast-speaker-list li > * {
   height: 100%;
