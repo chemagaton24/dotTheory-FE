@@ -1,0 +1,249 @@
+header {
+  height: 91px;
+  padding: 0 38px;
+}
+header .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+header .logo {
+  max-height: 64px;
+}
+.hero-section-block {
+  background-color: rgb(98, 69, 84);
+  padding: 32px 32px 0;
+  color: #fff;
+
+  @media only screen and (min-width: 768px) {
+    padding: 50px 50px 0;
+  }
+}
+.hero-section-block .inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.hero-section-block .row {
+  display: flex;
+  align-items: center;
+  gap: 32px 50px;
+  flex-direction: column;
+
+  @media only screen and (min-width: 1024px) {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+}
+.hero-section-block .row .col-1 {
+  flex: 1 1 0%;
+}
+.hero-section-block .row .col-2 {
+  flex: 2 1 0%;
+}
+.hero-section-block .friends-mental-benefits-img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 30px;
+}
+.hero-section-block h1 {
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 130%;
+  margin: 0px 0px 20px;
+  letter-spacing: 0.68px;
+}
+.hero-section-block p {
+  line-height: 180%;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+.hero-section-block .social-media-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  list-style: none;
+  margin-bottom: 20px;
+}
+.hero-section-block .social-media {
+  max-width: 40px;
+  max-height: 40px;
+}
+.light-purpple-bottom-wave-bg {
+  background-color: rgb(98, 69, 84);
+  width: 100%;
+}
+.podcast-speakers-block {
+  background-color: rgb(144, 122, 133);
+  text-align: center;
+  padding: 0 50px 50px;
+}
+.podcast-speakers-block h1 {
+  margin-block: 0 40px;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+.podcast-speakers-block .podcast-speaker-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  list-style: none;
+
+  @media only screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.podcast-speakers-block .podcast-speaker-list li {
+  flex-basis: 46%;
+}
+.podcast-speakers-block .podcast-speaker-list li > * {
+  height: 100%;
+}
+.podcast-speaker-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(250, 245, 232);
+  border-radius: 30px;
+  box-shadow: rgba(98, 69, 84, 0.44) 6px 6px;
+  box-sizing: border-box;
+  padding: 40px;
+}
+.podcast-speaker-card .speaker-image {
+  max-width: 375px;
+  width: 100%;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+.podcast-speaker-card h3 {
+  max-width: 375px;
+  border-radius: 30px;
+  margin-block: 0 20px;
+}
+.podcast-speaker-card h4 {
+  margin-block: 0 10px;
+}
+.podcast-speaker-card p {
+  line-height: 180%;
+  font-weight: 400;
+  font-size: 16px;
+  margin-block: 0 16px;
+}
+.podcast-speaker-card a {
+  display: flex;
+  width: 198px;
+  height: 50px;
+  background: rgb(247, 202, 93);
+  border-radius: 47px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  font-family: Poppins;
+  color: rgb(68, 47, 58);
+  z-index: 1;
+  transition: background 0.5s ease 0s;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+.podcast-speaker-card button:hover {
+  background: rgb(228, 164, 44);
+}
+.the-daily-shine-block {
+  background-color: rgb(250, 245, 232);
+  background-image: url("../images/podcast/yellow-corner-blob.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 40%;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 50px;
+}
+.the-daily-shine-block .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+
+  @media only screen and (min-width: 768px) {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+}
+.the-daily-shine-block .col-1 {
+  flex: 1 1 0%;
+}
+.the-daily-shine-block .col-2 {
+  flex: 2 1 0%;
+}
+.the-daily-shine-block h2 {
+  font-size: 34px;
+  font-weight: 500;
+  color: rgb(68, 47, 58);
+  line-height: 130%;
+  margin-block: 0 20px;
+}
+.the-daily-shine-block p {
+  line-height: 180%;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(68, 47, 58);
+  margin-block: 0 34px;
+}
+.the-daily-shine-block h4 {
+  line-height: 160%;
+  font-weight: 700;
+  font-size: 17px;
+  color: rgb(68, 47, 58);
+  text-transform: uppercase;
+}
+.the-daily-shine-block .social-media-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  list-style: none;
+  margin-bottom: 20px;
+}
+.the-daily-shine-block .social-media-list a {
+  color: rgb(68, 47, 58);
+}
+.the-daily-shine-block .social-media {
+  max-width: 40px;
+  max-height: 40px;
+}
+.the-daily-shine-block .episode-player {
+  display: flex;
+  width: 100%;
+}
+.the-daily-shine-block .episode-player .thumb {
+  max-width: 100px;
+  max-height: 100px;
+}
+.the-daily-shine-block .episode-player .info {
+  background-color: #fff;
+  flex-grow: 1;
+  border-bottom: 4px solid #dedede;
+  padding: 8px 8px 16px;
+}
