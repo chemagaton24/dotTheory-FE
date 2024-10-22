@@ -18,6 +18,14 @@ p {
   margin: 0;
 }
 
+.margin-0 {
+  margin: 0;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
 .heading-xl {
   font-size: 34px;
   font-style: normal;
