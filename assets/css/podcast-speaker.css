@@ -7,8 +7,8 @@
 .hero-section-block .col-2 {
   flex: 2 1 0%;
 }
-.hero-section-block h1 {
-  margin-bottom: 40px;
+.hero-section-block h2 {
+  margin: 0;
 }
 .hero-section-block .detail {
   background-color: rgb(250, 245, 232);

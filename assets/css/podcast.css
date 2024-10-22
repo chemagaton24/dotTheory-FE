@@ -30,13 +30,6 @@ header .logo {
   max-width: 350px;
   border-radius: 30px;
 }
-.hero-section-block h1 {
-  font-size: 34px;
-  font-weight: 500;
-  line-height: 130%;
-  margin: 0px 0px 20px;
-  letter-spacing: 0.68px;
-}
 .hero-section-block p {
   line-height: 180%;
   font-weight: 400;
@@ -64,13 +57,8 @@ header .logo {
   text-align: center;
   padding: 0 50px 50px;
 }
-.podcast-speakers-block h1 {
+.podcast-speakers-block h2 {
   margin-block: 0 40px;
-  font-size: 34px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 130%;
-  letter-spacing: 0.02em;
   color: #fff;
 }
 .podcast-speakers-block .podcast-speaker-list {
