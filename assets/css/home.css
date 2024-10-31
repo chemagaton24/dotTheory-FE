@@ -1,65 +1,18 @@
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-  color: rgb(68, 47, 58);
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-}
-
-p {
-  margin: 0;
-}
-
-img {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  vertical-align: middle;
-}
-
 header {
   position: absolute;
   right: 38px;
   top: 36px;
   z-index: 1;
 }
-
-.main-nav-block ul {
-  display: flex;
-  column-gap: 38px;
-  list-style: none;
-}
-.main-nav-block a {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  text-transform: capitalize;
-  color: rgb(68, 47, 58);
-  text-decoration: none;
-  transition: color 0.3s linear 0s;
-  padding-bottom: 3px;
-  border-bottom: 2px solid transparent;
-  cursor: pointer;
-}
-
-.main-nav-block a:hover {
-  border-bottom: 2px solid;
-}
-
 .hero-section-block {
   position: relative;
   height: 785px;
 }
 .hero-section-block .cover {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
 .hero-section-block .content-bg {
   position: absolute;
@@ -67,6 +20,11 @@ header {
   top: 0;
   width: 100%;
   height: 100%;
+  display: none;
+
+  @media only screen and (min-width: 768px) {
+    display: inline-block;
+  }
 }
 .hero-section-block .content-bg svg {
   width: 100%;
@@ -74,33 +32,84 @@ header {
 }
 .hero-section-block .content-wrap {
   position: absolute;
+  bottom: 0;
   left: 0;
-  top: 0;
-  width: 551px;
-  height: 785px;
+  width: 350px;
+  height: 437px;
+  background: white;
+  opacity: 0.925;
+  border-radius: 0px 360px 0px 0px;
+  padding: 52px 24px 32px;
+  box-sizing: border-box;
+
+  @media only screen and (min-width: 768px) {
+    top: 0;
+    bottom: unset;
+    background-color: transparent;
+    opacity: unset;
+    border-radius: unset;
+    width: 551px;
+    height: 785px;
+  }
 }
 .hero-section-block .content {
-  position: absolute;
-  left: 87px;
-  top: 200px;
+  @media only screen and (min-width: 768px) {
+    position: absolute;
+    left: 87px;
+    top: 200px;
+  }
 }
 .hero-section-block .heading {
-  line-height: 110%;
-  font-size: 44px;
-  font-style: normal;
+  line-height: 120%;
+  font-size: 27px;
+  letter-spacing: 0.01em;
+  margin: 35px 0px 5px;
+  max-width: 250px;
   font-weight: 500;
+
+  @media only screen and (min-width: 768px) {
+    line-height: 110%;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    max-width: unset;
+  }
 }
+
 .hero-section-block .description {
-  font-size: 30px;
-  max-width: 425px;
-  margin-block: 12px 40px;
+  text-align: left;
+  margin: 4px 0px 25px;
+  max-width: 240px;
+  font-size: 17px;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 30px;
+    max-width: 425px;
+    margin-block: 12px 40px;
+  }
+}
+
+.hero-section-block .award {
+  width: 91px;
+  margin-top: 25px;
+
+  @media only screen and (min-width: 768px) {
+    width: 139px;
+    margin-top: 34px;
+  }
 }
 
 .shine-premium-block {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   column-gap: 40px;
-  padding-block: 50px;
+  padding: 50px 32px;
+
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 .shine-premium-block .col-1 {
   max-width: 440px;
@@ -272,15 +281,17 @@ header {
 }
 .therapist-block .therapists-list-wrap .card-list {
   list-style: none;
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 1fr;
   row-gap: 35px;
+
+  @media only screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 .therapist-block .therapists-list-wrap .card-list > li {
-  width: 260px;
-  max-width: 33.33%;
+  max-width: 260px;
+  width: 100%;
 }
 .therapist-block .therapists-list-wrap .card {
   padding-bottom: 16px;
@@ -303,7 +314,7 @@ header {
 
 .reviews-block {
   background-color: rgb(77, 144, 143);
-  padding: 60px 0px;
+  padding: 60px 32px;
   color: rgb(255, 255, 255);
   background-image: url("../images/social-proof-section-blob.svg");
   background-repeat: no-repeat;
@@ -321,11 +332,27 @@ header {
 .reviews-block .review-content {
   display: flex;
   align-items: flex-start;
+  flex-direction: column;
+  row-gap: 16px;
   padding-top: 40px;
+  text-align: center;
+
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+.reviews-block .review-content > .col {
+  @media only screen and (max-width: 767px) {
+    width: 100%;
+  }
 }
 .reviews-block .quote-icon {
-  width: 60px;
-  max-width: 60px;
+  width: 100%;
+  max-width: 38px;
+
+  @media only screen and (min-width: 768px) {
+    max-width: 60px;
+  }
 }
 .reviews-block h2 {
   font-size: 38px;
@@ -341,7 +368,11 @@ header {
   text-align: justify;
   line-height: 160%;
   margin: 0px;
-  padding: 0 40px 40px;
+  padding: 0 0 40px;
+
+  @media only screen and (min-width: 768px) {
+    padding: 0 40px 40px;
+  }
 }
 
 .learn-about-us-block {
@@ -385,63 +416,5 @@ header {
 }
 .learn-about-us-block .naomi-and-marah-pic-wrap img {
   max-width: 600px;
-}
-
-footer {
-  padding: 40px 80px 0;
-}
-footer h3 {
-  margin: 0 0 24px;
-}
-footer nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-footer nav ul li {
-  margin-bottom: 12px;
-}
-footer nav a {
-  color: rgb(119, 119, 119);
-  text-decoration: none;
-  line-height: 150%;
-  font-size: 15px;
-}
-footer .row-1 {
-  display: flex;
-  padding-bottom: 40px;
-}
-footer .row-1 > .col {
-  flex-grow: 0.5;
-}
-footer .sitemap {
-  display: flex;
-  margin-bottom: 40px;
-}
-footer .sitemap > .col {
-  flex-grow: 0.2;
-}
-footer .app-download > ul {
-  display: flex;
-  column-gap: 32px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-footer .app-download img {
-  max-width: 182px;
-}
-footer .social-media-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  column-gap: 32px;
-}
-footer .copyright {
-  padding: 40px 0;
-  color: rgb(119, 119, 119);
-  line-height: 150%;
-  font-size: 15px;
-  border-top: 1px solid rgb(242, 237, 240);
+  width: 100%;
 }
