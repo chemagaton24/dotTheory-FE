@@ -25,23 +25,13 @@ header .logo {
   align-items: flex-start;
   column-gap: 50px;
 }
+.hero-section-block h1 {
+  margin-block: 16px;
+}
 .hero-section-block .friends-mental-benefits-img {
   width: 350px;
   max-width: 350px;
   border-radius: 30px;
-}
-.hero-section-block h1 {
-  font-size: 34px;
-  font-weight: 500;
-  line-height: 130%;
-  margin: 0px 0px 20px;
-  letter-spacing: 0.68px;
-}
-.hero-section-block p {
-  line-height: 180%;
-  font-weight: 400;
-  font-size: 16px;
-  margin-bottom: 25px;
 }
 .hero-section-block .social-media-list {
   display: flex;
@@ -49,7 +39,7 @@ header .logo {
   justify-content: flex-start;
   gap: 12px;
   list-style: none;
-  margin-bottom: 20px;
+  margin-block: 12px 20px;
 }
 .hero-section-block .social-media {
   max-width: 40px;
@@ -64,13 +54,8 @@ header .logo {
   text-align: center;
   padding: 0 50px 50px;
 }
-.podcast-speakers-block h1 {
+.podcast-speakers-block h2 {
   margin-block: 0 40px;
-  font-size: 34px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 130%;
-  letter-spacing: 0.02em;
   color: #fff;
 }
 .podcast-speakers-block .podcast-speaker-list {
