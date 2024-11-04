@@ -68,7 +68,6 @@ img {
   column-gap: 38px;
   list-style: none;
 }
-
 .main-nav-block a {
   font-style: normal;
   font-weight: 600;
@@ -81,7 +80,6 @@ img {
   border-bottom: 2px solid transparent;
   cursor: pointer;
 }
-
 .main-nav-block a:hover {
   border-bottom: 2px solid;
 }
@@ -89,53 +87,44 @@ img {
 footer {
   padding: 40px 32px 0;
 }
-
 footer h3 {
   margin: 0 0 24px;
 }
-
 footer nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
 footer nav ul li {
   margin-bottom: 12px;
 }
-
 footer nav a {
   color: rgb(119, 119, 119);
   text-decoration: none;
   line-height: 150%;
   font-size: 15px;
 }
-
 footer .row-1 {
   display: flex;
   flex-direction: column;
   padding-bottom: 40px;
   row-gap: 40px;
 }
-
+footer .row-1 > .col {
+  flex-grow: 0.5;
+}
 @media only screen and (min-width: 768px) {
   footer .row-1 {
     flex-direction: row;
   }
 }
-footer .row-1 > .col {
-  flex-grow: 0.5;
-}
-
 footer .sitemap {
   display: flex;
   margin-bottom: 40px;
 }
-
 footer .sitemap > .col {
   flex-grow: 0.2;
 }
-
 footer .app-download > ul {
   display: flex;
   column-gap: 16px;
@@ -143,17 +132,15 @@ footer .app-download > ul {
   padding: 0;
   margin: 0;
 }
-
+footer .app-download > ul img {
+  max-width: 182px;
+  width: 100%;
+}
 @media only screen and (min-width: 480px) {
   footer .app-download > ul {
     column-gap: 32px;
   }
 }
-footer .app-download img {
-  max-width: 182px;
-  width: 100%;
-}
-
 footer .social-media-list {
   list-style: none;
   margin: 0;
@@ -161,7 +148,6 @@ footer .social-media-list {
   display: flex;
   column-gap: 32px;
 }
-
 footer .copyright {
   padding: 40px 0;
   color: rgb(119, 119, 119);

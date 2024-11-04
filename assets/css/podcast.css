@@ -11,14 +11,11 @@ header .row {
 header .logo {
   max-height: 64px;
 }
+
 .hero-section-block {
   background-color: rgb(98, 69, 84);
   padding: 32px 32px 0;
   color: #fff;
-
-  @media only screen and (min-width: 768px) {
-    padding: 50px 50px 0;
-  }
 }
 .hero-section-block .inner {
   max-width: 1100px;
@@ -29,17 +26,18 @@ header .logo {
   align-items: center;
   gap: 32px 50px;
   flex-direction: column;
-
-  @media only screen and (min-width: 1024px) {
-    align-items: flex-start;
-    flex-direction: row;
-  }
 }
 .hero-section-block .row .col-1 {
   flex: 1 1 0%;
 }
 .hero-section-block .row .col-2 {
   flex: 2 1 0%;
+}
+@media only screen and (min-width: 1024px) {
+  .hero-section-block .row {
+    align-items: flex-start;
+    flex-direction: row;
+  }
 }
 .hero-section-block .friends-mental-benefits-img {
   width: 100%;
@@ -64,10 +62,17 @@ header .logo {
   max-width: 40px;
   max-height: 40px;
 }
+@media only screen and (min-width: 768px) {
+  .hero-section-block {
+    padding: 50px 50px 0;
+  }
+}
+
 .light-purpple-bottom-wave-bg {
   background-color: rgb(98, 69, 84);
   width: 100%;
 }
+
 .podcast-speakers-block {
   background-color: rgb(144, 122, 133);
   text-align: center;
@@ -85,11 +90,6 @@ header .logo {
   max-width: 1100px;
   margin: 0 auto;
   list-style: none;
-
-  @media only screen and (min-width: 768px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
 }
 .podcast-speakers-block .podcast-speaker-list li {
   flex-basis: 46%;
@@ -97,6 +97,13 @@ header .logo {
 .podcast-speakers-block .podcast-speaker-list li > * {
   height: 100%;
 }
+@media only screen and (min-width: 768px) {
+  .podcast-speakers-block .podcast-speaker-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .podcast-speaker-card {
   display: flex;
   flex-direction: column;
@@ -153,6 +160,7 @@ header .logo {
 .podcast-speaker-card button:hover {
   background: rgb(228, 164, 44);
 }
+
 .the-daily-shine-block {
   background-color: rgb(250, 245, 232);
   background-image: url("../images/podcast/yellow-corner-blob.svg");
@@ -173,8 +181,9 @@ header .logo {
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
-
-  @media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 768px) {
+  .the-daily-shine-block .row {
     align-items: flex-start;
     flex-direction: row;
   }
@@ -235,3 +244,5 @@ header .logo {
   border-bottom: 4px solid #dedede;
   padding: 8px 8px 16px;
 }
+
+/*# sourceMappingURL=podcast.css.map */

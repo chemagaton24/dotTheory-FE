@@ -1,0 +1,156 @@
+.hero-section-block {
+  overflow: hidden;
+
+  .col-1 {
+    flex: 1 1 0%;
+  }
+
+  .col-2 {
+    flex: 2 1 0%;
+  }
+
+  h1 {
+    margin-bottom: 40px;
+  }
+
+  .detail {
+    background-color: rgb(250, 245, 232);
+    color: rgb(68, 47, 58);
+    padding: 32px;
+    border-radius: 30px;
+    text-align: center;
+    max-width: 900px;
+    margin: 50px auto;
+    box-sizing: border-box;
+
+    a {
+      color: rgb(68, 47, 58);
+    }
+
+    h2 {
+      line-height: 150%;
+      font-weight: 500;
+      font-size: 30px;
+      letter-spacing: 0.02em;
+      margin: 0 0 16px;
+    }
+
+    @media only screen and (min-width: 768px) {
+      padding: 50px 75px;
+    }
+  }
+
+  .podcast-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 14px;
+    background-color: #f8f8fa;
+    padding: 14px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 14px;
+    width: max-content;
+    margin: 0 auto;
+
+    .thumb {
+      max-width: 100px;
+      max-height: 100px;
+      border-radius: 6px;
+    }
+
+    .gray {
+      color: rgba(60, 60, 67, 0.6);
+    }
+
+    .btns {
+      display: flex;
+      column-gap: 8px;
+      margin-top: 6px;
+    }
+
+    .play-btn {
+      display: inline-flex;
+      align-items: center;
+      column-gap: 8px;
+      background-color: #7224d8;
+      align-items: center;
+      justify-content: center;
+      column-gap: 8px;
+      border-radius: 6px;
+      border: unset;
+      color: #fff;
+      width: 128px;
+      height: 34px;
+    }
+
+    .play-btn,
+    .see-more-btn {
+      display: inline-flex;
+      align-items: center;
+      column-gap: 8px;
+      background-color: #7224d8;
+      align-items: center;
+      justify-content: center;
+      column-gap: 8px;
+      border-radius: 6px;
+      border: unset;
+      color: #fff;
+      width: 128px;
+      height: 34px;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 0em;
+    }
+
+    .play-btn .icon,
+    .see-more-btn .icon {
+      width: 100%;
+      max-width: 18px;
+      max-height: 18px;
+    }
+
+    .see-more-btn {
+      background-color: rgba(114, 36, 216, 0.06);
+      color: #7224d8;
+    }
+
+    @media only screen and (min-width: 768px) {
+      flex-direction: row;
+      margin: unset;
+    }
+  }
+}
+
+.detail-comment-block {
+  background-color: rgb(98, 69, 84);
+  margin: 0 auto;
+  padding: 40px;
+
+  h2 {
+    margin-block: 0 24px;
+  }
+
+  form {
+    background-color: rgb(250, 245, 232);
+    color: rgb(68, 47, 58);
+    padding: 32px;
+    border-radius: 30px;
+    max-width: 500px;
+    margin: 50px auto;
+    box-sizing: border-box;
+
+    @media only screen and (min-width: 768px) {
+      padding: 50px 75px;
+    }
+  }
+
+  input,
+  textarea {
+    width: 100%;
+  }
+
+  textarea {
+    height: 100px;
+  }
+}
