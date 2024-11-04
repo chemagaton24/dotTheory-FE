@@ -1,0 +1,479 @@
+header {
+  position: absolute;
+  right: 38px;
+  top: 36px;
+  z-index: 1;
+}
+
+.hero-section-block {
+  position: relative;
+  height: 785px;
+
+  .cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .content-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media only screen and (min-width: 768px) {
+      display: inline-block;
+    }
+  }
+
+  .content-wrap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 350px;
+    height: 437px;
+    background: white;
+    opacity: 0.925;
+    border-radius: 0px 360px 0px 0px;
+    padding: 52px 24px 32px;
+    box-sizing: border-box;
+
+    @media only screen and (min-width: 768px) {
+      top: 0;
+      bottom: unset;
+      background-color: transparent;
+      opacity: unset;
+      border-radius: unset;
+      width: 551px;
+      height: 785px;
+    }
+  }
+
+  .content {
+    @media only screen and (min-width: 768px) {
+      position: absolute;
+      left: 87px;
+      top: 200px;
+    }
+  }
+
+  .heading {
+    line-height: 120%;
+    font-size: 27px;
+    letter-spacing: 0.01em;
+    margin: 35px 0px 5px;
+    max-width: 250px;
+    font-weight: 500;
+
+    @media only screen and (min-width: 768px) {
+      line-height: 110%;
+      font-size: 44px;
+      font-style: normal;
+      font-weight: 500;
+      max-width: unset;
+    }
+  }
+
+  .description {
+    text-align: left;
+    margin: 4px 0px 25px;
+    max-width: 240px;
+    font-size: 17px;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 30px;
+      max-width: 425px;
+      margin-block: 12px 40px;
+    }
+  }
+
+  .award {
+    width: 91px;
+    margin-top: 25px;
+
+    @media only screen and (min-width: 768px) {
+      width: 139px;
+      margin-top: 34px;
+    }
+  }
+}
+
+.shine-premium-block {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  column-gap: 40px;
+  padding: 50px 32px;
+
+  .col-1 {
+    max-width: 440px;
+  }
+
+  .col-2 {
+    max-width: 322px;
+  }
+
+  .sub-heading {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 110%;
+    margin-block: 16px 8px;
+  }
+
+  .heading {
+    font-style: normal;
+    font-size: 26px;
+    line-height: 120%;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    margin-block: 8px 20px;
+  }
+
+  .list {
+    list-style: none;
+    max-width: 320px;
+
+    > li {
+      background-repeat: no-repeat;
+      background-size: 64px auto;
+      background-position: left top 15px;
+      padding-top: 15px;
+      padding-left: 80px;
+      margin-bottom: 24px;
+
+      &.meditation {
+        background-image: url("../images/wellness-journey-list/meditation.png");
+      }
+
+      &.courses {
+        background-image: url("../images/wellness-journey-list/courses.png");
+      }
+
+      &.support {
+        background-image: url("../images/wellness-journey-list/support.png");
+      }
+
+      &.community {
+        background-image: url("../images/wellness-journey-list/community.png");
+      }
+
+      h4 {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 110%;
+        margin-block: 0 8px;
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+        color: rgb(119, 119, 119);
+        margin-block: 0px;
+      }
+    }
+  }
+
+  video {
+    max-width: 100%;
+  }
+
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.meditation-playlist {
+  background-image: url("../images/library-section-blob.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 30%;
+  background-color: rgb(52, 115, 113);
+  min-height: 740px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 10px;
+
+  .section-heading {
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    font-size: 38px;
+    max-width: 696px;
+    text-align: center;
+  }
+
+  .track-list-wrap {
+    width: 100%;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .track-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    column-gap: 20px;
+  }
+
+  .card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    width: 354px;
+    height: 317px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    .img-wrap {
+      position: relative;
+      margin-bottom: 20px;
+
+      .controls {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .active {
+          display: none;
+        }
+      }
+    }
+
+    &:hover {
+      .img-wrap {
+        .controls {
+          .inactive {
+            display: none;
+          }
+
+          .active {
+            display: inline-block;
+          }
+        }
+      }
+    }
+
+    .artist {
+      font-size: 14px;
+      color: rgb(119, 119, 119);
+      font-weight: 500;
+      line-height: 130%;
+      margin-bottom: 15px;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: 600;
+      color: rgb(25, 25, 25);
+      line-height: 130%;
+    }
+  }
+}
+
+.therapist-block {
+  background-color: rgb(248, 238, 216);
+  padding-bottom: 115px;
+
+  .therapists-list-wrap {
+    position: relative;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 60px 24px 20px;
+    max-width: 952px;
+    margin: -70px auto 0;
+    border-radius: 32px;
+    text-align: center;
+
+    h2 {
+      font-size: 28px;
+      line-height: 120%;
+      max-width: 550px;
+      margin: 0 auto 60px;
+      font-weight: 500;
+    }
+
+    .card-list-wrap {
+      display: inline-block;
+      text-align: center;
+    }
+
+    .card-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 35px;
+
+      > li {
+        max-width: 260px;
+        width: 100%;
+      }
+
+      @media only screen and (min-width: 768px) {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+
+    .card {
+      padding-bottom: 16px;
+
+      img {
+        margin-bottom: 18px;
+        max-width: 180px;
+      }
+
+      .name {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 2px;
+      }
+
+      .position {
+        font-size: 16px;
+        line-height: 24px;
+        color: rgb(119, 119, 119);
+      }
+    }
+  }
+}
+
+.reviews-block {
+  background-color: rgb(77, 144, 143);
+  padding: 60px 32px;
+  color: rgb(255, 255, 255);
+  background-image: url("../images/social-proof-section-blob.svg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 20%;
+
+  .inner {
+    margin: 0 auto;
+    max-width: 700px;
+  }
+
+  .review-stars-wrap {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .review-content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 16px;
+    padding-top: 40px;
+    text-align: center;
+
+    @media only screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  .review-content > .col {
+    @media only screen and (max-width: 767px) {
+      width: 100%;
+    }
+  }
+
+  .quote-icon {
+    width: 100%;
+    max-width: 38px;
+
+    @media only screen and (min-width: 768px) {
+      max-width: 60px;
+    }
+  }
+
+  h2 {
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 120%;
+    text-align: center;
+    max-width: 660px;
+    letter-spacing: 0.38px;
+    margin: 0 auto;
+  }
+
+  p {
+    font-size: 18px;
+    text-align: justify;
+    line-height: 160%;
+    margin: 0px;
+    padding: 0 0 40px;
+
+    @media only screen and (min-width: 768px) {
+      padding: 0 40px 40px;
+    }
+  }
+}
+
+.learn-about-us-block {
+  background-color: rgb(248, 238, 216);
+  background-image: url("../images/shine-founders-background-blob.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center bottom;
+  padding: 50px;
+  text-align: center;
+
+  h2 {
+    max-width: 495px;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 130%;
+    margin: 0 auto 36px;
+  }
+
+  p {
+    font-size: 24px;
+    max-width: 700px;
+    margin: 0 auto 24px;
+  }
+
+  .cta-wrap {
+    margin-bottom: 30px;
+  }
+
+  .cta-wrap button {
+    display: inline-flex;
+    width: 198px;
+    height: 50px;
+    background: rgb(247, 202, 93);
+    border-radius: 47px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(68, 47, 58);
+    transition: background 0.5s ease 0s;
+    border: 0;
+  }
+
+  .naomi-and-marah-pic-wrap img {
+    max-width: 600px;
+    width: 100%;
+  }
+}
