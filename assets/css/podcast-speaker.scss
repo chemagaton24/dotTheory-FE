@@ -25,6 +25,10 @@
 
     a {
       color: rgb(68, 47, 58);
+
+      &:hover {
+        text-decoration: none;
+      }
     }
 
     h2 {

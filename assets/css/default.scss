@@ -81,10 +81,14 @@ img {
     padding-bottom: 3px;
     border-bottom: 2px solid transparent;
     cursor: pointer;
-  }
 
-  a:hover {
-    border-bottom: 2px solid;
+    &:hover {
+      border-bottom: 2px solid;
+    }
+
+    &:focus {
+      outline: 1px solid blue;
+    }
   }
 }
 
@@ -110,6 +114,14 @@ footer {
       text-decoration: none;
       line-height: 150%;
       font-size: 15px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &:focus {
+        outline: 1px solid blue;
+      }
     }
   }
 

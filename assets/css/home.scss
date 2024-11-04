@@ -218,6 +218,8 @@ header {
   .track-list-wrap {
     width: 100%;
     overflow: auto;
+    padding-block: 15px;
+    margin-block: -15px;
 
     &::-webkit-scrollbar {
       display: none;
@@ -240,6 +242,14 @@ header {
     height: 317px;
     box-sizing: border-box;
     cursor: pointer;
+
+    &:hover {
+      scale: 1.03;
+    }
+
+    &:focus {
+      outline: 1px solid blue;
+    }
 
     .img-wrap {
       position: relative;
@@ -470,6 +480,15 @@ header {
     color: rgb(68, 47, 58);
     transition: background 0.5s ease 0s;
     border: 0;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(255 213 113);
+    }
+
+    &:focus {
+      outline: 1px solid blue;
+    }
   }
 
   .naomi-and-marah-pic-wrap img {

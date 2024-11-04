@@ -202,6 +202,8 @@ header {
 .meditation-playlist .track-list-wrap {
   width: 100%;
   overflow: auto;
+  padding-block: 15px;
+  margin-block: -15px;
 }
 .meditation-playlist .track-list-wrap::-webkit-scrollbar {
   display: none;
@@ -221,6 +223,12 @@ header {
   height: 317px;
   box-sizing: border-box;
   cursor: pointer;
+}
+.meditation-playlist .card:hover {
+  scale: 1.03;
+}
+.meditation-playlist .card:focus {
+  outline: 1px solid blue;
 }
 .meditation-playlist .card .img-wrap {
   position: relative;
@@ -422,6 +430,13 @@ header {
   color: rgb(68, 47, 58);
   transition: background 0.5s ease 0s;
   border: 0;
+  cursor: pointer;
+}
+.learn-about-us-block .cta-wrap button:hover {
+  background-color: rgb(255, 213, 113);
+}
+.learn-about-us-block .cta-wrap button:focus {
+  outline: 1px solid blue;
 }
 .learn-about-us-block .naomi-and-marah-pic-wrap img {
   max-width: 600px;

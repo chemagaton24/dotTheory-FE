@@ -83,6 +83,9 @@ img {
 .main-nav-block a:hover {
   border-bottom: 2px solid;
 }
+.main-nav-block a:focus {
+  outline: 1px solid blue;
+}
 
 footer {
   padding: 40px 32px 0;
@@ -103,6 +106,9 @@ footer nav a {
   text-decoration: none;
   line-height: 150%;
   font-size: 15px;
+}
+footer nav a:hover {
+  text-decoration: underline;
 }
 footer .row-1 {
   display: flex;
